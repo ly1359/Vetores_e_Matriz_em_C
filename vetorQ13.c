@@ -2,7 +2,7 @@
 
 void inverte(int n, int *vet){
     int rotev[9];
-    for(int j = 9,i = 0; i <= 9; i++,j--){
+    for(int j = 8,i = 0; i < 9; i++,j--){
         rotev[i] = vet[j];
         printf("%d ", rotev[i]);
     }
