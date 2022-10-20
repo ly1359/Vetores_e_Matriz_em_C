@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 void inverte(int n, int *vet){
-    int rotev[9];
-    for(int j = 8,i = 0; i < 9; i++,j--){
+    int rotev[n];
+    for(int j = n - 1,i = 0; i < n; i++,j--){
         rotev[i] = vet[j];
         printf("%d ", rotev[i]);
     }
