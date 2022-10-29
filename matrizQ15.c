@@ -1,9 +1,13 @@
 #include <stdio.h>
 //função para multiplicar
 void multiplicacao_Matriz(int matrizA[2][2], int matrizB[2][2], int matrizC[2][2], int l, int c){
-    for(int i = 0; i < l; i++){
+    for(int i = 0; i < l;i++){
         for(int j = 0; j < c; j++){
-            matrizC[i][j] = matrizA[i][j] * matrizB[i][j];
+            int soma = 0;
+            for(int k = 0; k < c; k++){
+                soma = soma + matrizA[i][k] * matrizB[k][j];
+            }
+                matrizC[i][j] = soma;
         }
     }
 }
